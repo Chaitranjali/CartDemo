@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+  android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.example.chaiii.cartdemo.MainActivity">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/loki"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible"
+        android:layout_margin="6dp"
+        android:background="@drawable/round_plus_icon"
+        android:src="@drawable/ic_add_circle_24dp"
+        />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/choti"
+        android:background="@drawable/round_plus_icon"
+        android:src="@drawable/ic_remove_circle_24dp"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:hint="0"
+        android:textSize="20dp"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/loki"
+        android:layout_toEndOf="@+id/loki"
+        android:layout_alignTop="@+id/loki"
+        android:layout_alignBottom="@+id/loki" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quantity"
+        android:textSize="20dp"
+        android:id="@+id/qty"
+        android:textAlignment="center"
+        android:visibility="visible"
+        android:layout_marginTop="59dp"
+        android:drawableLeft="@drawable/ic_add_shopping_cart_24dp"
+        android:layout_below="@+id/loki"
+        android:layout_alignLeft="@+id/loki"
+        android:layout_alignStart="@+id/loki"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/button"
+        android:hint="0"
+        android:textColorHint="@color/white"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        android:background="@drawable/rounded_btn"
+        android:backgroundTint="@color/white"
+        android:layout_alignBottom="@+id/qty"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
